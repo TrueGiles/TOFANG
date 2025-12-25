@@ -261,11 +261,6 @@ int getPlayerSpeed() {
     return -tofOffset * MAX_PLAYER_SPEED / TOF_RANGE;
 }
 
-void drawBackground() {
-    //for (auto i = 0; i < LED_COUNT; i++) {
-    //    leds[i] = CRGB(leds[i].DarkMagenta).fadeToBlackBy(242);
-    //}
-}
 
 void loopPlay(unsigned long mm) {
     if (attacking) {
@@ -319,7 +314,6 @@ void loopPlay(unsigned long mm) {
     }
 
     FastLED.clear();
-    drawBackground();
     tickConveyors(mm);
     drawAttack(mm);
     tickBoss();
